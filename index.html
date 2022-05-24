@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Trial</title>
+</head>
+<body>
+    
+    <h1>Github trial website</h1>
+    <input type="text" name="num1" placeholder="Number 1" id="n1">
+    <input type="text" name="num2" placeholder="Number 2" id="n2">
+    <button style="background-color:rgb(3, 4, 78); color: white;" id="btn">Add</button>
+
+    <script>
+        document.getElementById('btn').onclick = () => {
+            const a =document.getElementById('n1').value; //7
+            const b =document.getElementById('n2').value; // 3
+
+            const sum =parseInt(a) + parseInt(b); //without parseInt => 73
+            alert( "Sum is : " + sum)
+        }
+    </script>
+    
+</body>
+</html>
